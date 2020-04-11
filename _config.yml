@@ -1,0 +1,22 @@
+## Settings
+title: David Dev Blog
+owner: "ironwolf1990"
+# url: "https://ironwolf1990.github.io/"
+# baseurl: "/pRoJEct-NeGYa"
+baseurl = ""
+permalink: /:title/
+description: ""
+markdown: kramdown
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+## Global Variables
+email: "ansh1990@gmail.com"
+github: "ironWolf1990"
+# path to: css/, fonts/, img/ and js/
+assets_path: "/assets" # i.e. "/assets" 
+statement: "Designed by DeerRIDER, All Rights Reserved"
+# default max toc levels: 1 - 6 (h1 - h6)
+toc_level: 3
+# texts randomly displayed in background
+bgtext: "αβγδεζηθικλμνξοπρστυφχψω∷∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌√"
