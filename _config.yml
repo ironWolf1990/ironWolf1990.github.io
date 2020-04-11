@@ -3,7 +3,7 @@ title: David Dev Blog
 owner: "ironwolf1990"
 # url: "https://ironwolf1990.github.io/"
 # baseurl: "/pRoJEct-NeGYa"
-baseurl = ""
+baseurl: ""
 permalink: /:title/
 description: ""
 markdown: kramdown
