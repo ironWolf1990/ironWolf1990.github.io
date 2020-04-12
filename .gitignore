@@ -1,2 +1,7 @@
+!.gitignore
+Gemfile.lock
+node_modules
+npm-debug.log*
 text-formats
 _posts/_sample
+_site
