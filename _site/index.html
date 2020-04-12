@@ -36,7 +36,7 @@
   var ctx = c.getContext("2d");
   c.height = window.innerHeight;
   c.width = window.innerWidth;
-  var txts = "αβγδεζηθικλμνξοπρστυφχψω∷∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌√";
+  var txts = "ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをんゔゕゖァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヵヶヷヸヹヺ・ーヽヾヿ";
   txts = txts.split("");
   var font_size = 12;
   var columns = c.width / font_size;
@@ -55,7 +55,7 @@
       drops[i]++;
     }
   }
-  setInterval(draw, 20);
+  setInterval(draw, 85);
 </script>
     <div class="container" id="ctner">
       <div class="header">
@@ -94,6 +94,16 @@
                         </i>
                     </a>
                 
+                <!-- linkedin -->
+                
+                    <a class="header_btn" href="https://github.com/https://www.linkedin.com/in/ansh-david-071b0354">
+                        <i class="fa fa-linkedin">
+                            
+                                <p class="btn_text">LinkedIn</p>
+                            
+                        </i>
+                    </a>
+                
                 <!-- maximize -->
                 
                     <a class="header_btn" id="mxmz_btn" onclick="toggle_maximize()">
@@ -121,7 +131,7 @@
                 class="span_right">
                 <!-- popup table of content -->
                 
-                    <a class="title">David Dev Blog</a>
+                    <a class="title">anshdaviddev.com</a>
                     <!-- 
                         <a class="owner">
                             -
@@ -203,19 +213,19 @@
 
       <div class="div_article" id="div_atcl">       
         <article id="main_atcl" itemscope itemtype="http://schema.org/BlogPosting">
-          <h1 id="welcome">WELCOME</h1>
-
-<p><br /><br /><br /><br /></p>
-
-<p style="text-align: center"><span style="color:red">This site is under construction</span></p>
-
-<p><br /><br /><br /><br /></p>
-
-<p style="text-align: center">This is theme is cloned from  <a href="https://github.com/akiritsu/pRoJEct-NeGYa"><strong>pRoJEct NeGYa (Github)</strong></a></p>
+          <p style="text-align: center"><br /><br /><br /><br />
+THINKER<br /><br />
+DAY DREAMER<br /><br />
+AVID READER<br /><br />
+LOVES TO LEARN<br /><br />
+LOVES WEARING A TIE<br /><br /></p>
 
           
+<p><br /><br /><br /><br /><br /></p>
+<!-- <hr class="style1"> -->
 <!-- list of articles: sort by date (by default) -->
-<h1 class="loa">Post List, sorted by date</h1>
+<p style="color:gray; font-size: 80%; text-align: right;">Post List, sorted by date</p>
+<!-- <h1 class="loa">Post List, sorted by date</h1> -->
 <table>
     <thead>
         <tr>
@@ -240,7 +250,7 @@
             </li>
             
             <li>
-                Designed by DeerRIDER, All Rights Reserved
+                Designed by DeerRIDER, [akiritsu/pRoJEct-NeGYa (Github)]. All Rights Reserved
             </li>
             
     </nav>

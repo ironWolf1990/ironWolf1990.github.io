@@ -1,7 +1,7 @@
 ## Settings
-title: David Dev Blog
+title: "anshdaviddev.com"
 owner: "ironwolf1990"
-url: "https://ironwolf1990.github.io/"
+url: "https://ironwolf1990.github.io"
 # baseurl: "/blog" # the subpath of your site, e.g. "/blog"
 baseurl: ""
 permalink: /:title/
@@ -13,10 +13,14 @@ webrick:
 ## Global Variables
 email: "ansh1990@gmail.com"
 github: "ironWolf1990"
+linkedin: "https://www.linkedin.com/in/ansh-david-071b0354"
 # path to: css/, fonts/, img/ and js/
 assets_path: "/assets" # i.e. "/assets" 
-statement: "Designed by DeerRIDER, All Rights Reserved"
+statement: "Designed by DeerRIDER, [akiritsu/pRoJEct-NeGYa (Github)]. All Rights Reserved"
 # default max toc levels: 1 - 6 (h1 - h6)
 toc_level: 3
 # texts randomly displayed in background
-bgtext: "αβγδεζηθικλμνξοπρστυφχψω∷∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌√"
+bgtext: "ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴ\
+        ふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをんゔゕゖァアィイゥウェエォオカガキギクグケゲコゴ\
+        サザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリ\
+        ルレロヮワヰヱヲンヴヵヶヷヸヹヺ・ーヽヾヿ"

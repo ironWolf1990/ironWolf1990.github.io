@@ -11,16 +11,12 @@ encrypted_text: true
 permalink: /
 ---
 
-# WELCOME
-
-<br/><br/><br/><br/>
 
 {:center: style="text-align: center"}
-<span style="color:red">This site is under construction</span>
-{:center}
-
-<br/><br/><br/><br/>
-
-{:center: style="text-align: center"}
-This is theme is cloned from  [**pRoJEct NeGYa (Github)**](https://github.com/akiritsu/pRoJEct-NeGYa)
+<br><br><br><br>
+THINKER<br><br>
+DAY DREAMER<br><br>
+AVID READER<br><br>
+LOVES TO LEARN<br><br>
+LOVES WEARING A TIE<br><br>
 {:center}

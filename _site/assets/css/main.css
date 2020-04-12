@@ -227,6 +227,8 @@ body hr {
   border: 0;
   border-top: 1px solid rgba(52, 165, 7, 0.6);
   margin: 0 0 0 0; }
+body .style1 {
+  border-top: 1px dashed #8c8b8b; }
 body video {
   margin: 0;
   padding: 0;
