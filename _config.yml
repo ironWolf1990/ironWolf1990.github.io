@@ -4,7 +4,7 @@ owner: "ironwolf1990"
 url: "https://ironwolf1990.github.io"
 # baseurl: "/blog" # the subpath of your site, e.g. "/blog"
 baseurl: ""
-permalink: /:title/
+permalink: /:year/:month/:day/:title/
 description: ""
 markdown: kramdown
 webrick:

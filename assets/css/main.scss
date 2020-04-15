@@ -5,14 +5,25 @@ Jekyll Assets: start scss files with two lines of triple dashes
 @charset "utf-8";
 
 // global reset
+// dark mode
 $color-primary: rgb(52, 165, 7);
 $color-warning: rgb(194, 5, 5);
 $color-bg: rgb(0, 0, 0);
 $color-postbg: rgb(0, 0, 0);
+
+// light mode
+// $color-primary: rgb(0, 0, 0,);
+// $color-warning: rgb(194, 5, 5);
+// $color-bg: rgb(0, 0, 0);
+// $color-postbg: rgb(211,211,211);
+
+$color-background: rgb(50, 50, 50);
 $image-background: none;
 @font-face {
   font-family: "Fira Code Online";
   src: url("../fonts/FiraCode-Regular.woff");
+  // font-family: "Arial";
+  // src: url("../fonts/Arial.woff");
 }
 $font-family: 
 "Fira Code", 
@@ -69,7 +80,7 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
     max-width: 1240px;
     position: relative;
     box-sizing: border-box; // interior border
-    background-color: rgba($color-postbg, 0.72);
+    background-color: rgba($color-postbg, 1);
     .header {
       position: absolute;
       text-align: center;
@@ -138,17 +149,24 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
       overflow-x: hidden;
       border: 1px solid $color-primary;
       border-top: none;
+      padding: 0px 3px 0px -1px;
       .post_info {
+        border-bottom: 1px solid $color-primary;
         text-align: right;
-        padding: 0 50px;
+        padding: 0px 5px 10px 5px;
         font-size: $font-smaller;
       }
       // abstract
       .abstract {
-        padding: 20px 20px;
+        padding: 10px 10px;
         p {
+          font-size: 90%;
           padding: 0 20px;
-          border-bottom: 0.6px solid rgba($color-primary, 0.3);
+          // border-bottom: 1px solid rgba($color-primary, 0.3);
+          color: rgb(52, 165, 7);
+          border: 1px solid rgba($color-primary, 0.3);
+          box-sizing: border-box;
+          background-color: rgb(50, 50, 50);
         }
       }
       article {
@@ -201,25 +219,35 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
           border-left: 2px solid $color-primary;
         }
         .encrypted {
-          color: rgba($color-warning, 0.9);
+          text-align:center;
+          font-size:.9em;
+          color: rgba($color-warning, 1);
           word-break: break-all;
+        }
+        .quote {
+          text-align:center;
+          font-size:.9em;
+          color: rgba($color-warning, 1);
         }
       }
     }
     // scroll bar
     .div_article::-webkit-scrollbar {
-      width: 2px;
+      width: 7px;
+      color: gray;
     }
     .div_article::-webkit-scrollbar-thumb {
       background-color: $color-primary;
+      color: gray;
     }
     .footer {
       height: auto;
-      padding: 3% 0 1% 0;
-      margin: 10px 0 10px 0;
+      padding: 3% 0 .3% 0;
+      margin: 10px 0 1px 0;
       position: relative;
       text-align: center;
       .nav_bar {
+        border-top: 1px solid $color-primary;
         bottom: 0;
         margin: 0;
         padding: 0 10px 0 10px;
@@ -250,7 +278,7 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
     visibility: hidden;
     max-width: 70%;
     width: auto;
-    background-color: rgba($color-postbg, 0.7);
+    background-color: rgba($color-postbg, 1);
     text-align: left;
     padding: 0px 0;
     position: absolute;
@@ -293,8 +321,10 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
 }
 // global basic settings
 body {
+  counter-reset: h1;
   // texts
   h1 {
+    counter-reset: h2;
     font-size: $font-size-h1;
     text-transform: uppercase;
     text-align: center !important;
@@ -302,27 +332,55 @@ body {
     margin: 32px 0px 22px 0px;
   }
   h2 {
+    counter-reset: h3;
     font-size: $font-size-h2;
     font-weight: lighter;
     text-transform: capitalize;
     border-bottom: 0.6px solid rgba($color-primary, 0.3);
   }
   h3 {
+    counter-reset: h4;
     font-size: $font-size-h3;
     text-transform: capitalize;
     font-weight: lighter;
   }
   h4 {
+    counter-reset: h5;
     font-size: $font-size-h4;
     font-weight: lighter;
   }
   h5 {
+    counter-reset: h6;
     font-size: $font-size-h5;
     font-weight: lighter;
   }
   h6 {
+    counter-reset: h7;
     font-size: $font-size-h6;
     font-weight: lighter;
+  }
+  h1:before {
+    counter-increment: h1;
+    // content: counter(h1) ". "
+  }
+  
+  h2:before {
+    counter-increment: h2;
+    content: counter(h2) ". "
+  }
+  
+  h3:before {
+    counter-increment: h3;
+    content: counter(h2) "." counter(h3) ". "
+  }
+  
+  h4:before {
+    counter-increment: h4;
+    content: counter(h2) "." counter(h3) "." counter(h4) ". "
+  }
+  h5:before {
+    counter-increment: h5;
+    content: counter(h2) "." counter(h3) "." counter(h4) ". " counter(h5) ". "
   }
   p {
     margin: 10px;
@@ -455,4 +513,10 @@ body {
       }
     }
   }
+}
+img[src$="center"] {
+  display:block;
+  margin: 0 auto;
+  width: 400px;
+  padding: 10px 0px;
 }

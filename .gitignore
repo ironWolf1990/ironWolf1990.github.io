@@ -1,7 +1,9 @@
 !.gitignore
+.vscode
+assets/css/custom.scss
+_posts/_sample
+_site
 Gemfile.lock
 node_modules
 npm-debug.log*
 text-formats
-_posts/_sample
-_site

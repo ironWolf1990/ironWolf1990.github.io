@@ -1,2 +1,5 @@
 source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugin
+gem 'github-pages',
+group: :jekyll_plugin do
+    gem "jekyll-postfiles"
+end
