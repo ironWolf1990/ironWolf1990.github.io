@@ -1,7 +1,7 @@
 ## Settings
 title: "anshdaviddev.com"
 owner: "ironwolf1990"
-url: "https://ironwolf1990.github.io"
+url: "https://anshdaviddev.com"
 # baseurl: "/blog" # the subpath of your site, e.g. "/blog"
 baseurl: ""
 permalink: /:year/:month/:day/:title/
@@ -10,17 +10,24 @@ markdown: kramdown
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"
+
 ## Global Variables
 email: "ansh1990@gmail.com"
 github: "ironWolf1990"
 linkedin: "ansh-david-071b0354"
+
 # path to: css/, fonts/, img/ and js/
-assets_path: "/assets" # i.e. "/assets" 
+
+assets_path: "/assets"
 statement: "Designed by DeerRIDER, [akiritsu/pRoJEct-NeGYa (Github)]. All Rights Reserved"
-# default max toc levels: 1 - 6 (h1 - h6)
-toc_level: 3
+
+toc_level: 6
+
 # texts randomly displayed in background
 bgtext: "ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴ\
         ふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをんゔゕゖァアィイゥウェエォオカガキギクグケゲコゴ\
         サザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリ\
         ルレロヮワヰヱヲンヴヵヶヷヸヹヺ・ーヽヾヿ"
+
+plugins:
+  - jekyll-sitemap
