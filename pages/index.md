@@ -19,7 +19,7 @@ LOVES TO LEARN<br><br>
 LOVES WEARING A TIE<br><br>
 {: style="text-align: center"}
 
-<p class="encrypted" id="+v8G75YA7Hg0F7amYYn3Zg/Ei/Kj4vOPiFfwkIqTEb05zjrv5eO6qaOZEYfn5OUbMq+uGLib1sSa0JUSFU13UdyqFFxgrANLsFsoLstnergvSTe2NPjsfXgtkJluDs4O5ByPoSZYEm0s2X4DpR/YFqN36NqnQbvbq3HLHWQE+7QOSbHtnCMFW0iBzpiEK0YZr0CrUC2Nzf">!eNcRyPtEd TeXt!(Token ?)</p>
+<p class="encrypted" id="+v8G75YA7Hg0F7amYYn3Zg/Ei/Kj4vOPiFfwkIqTEb05zjrv5eO6qaOZEYfn5OUbMq+uGLib1sSa0JUSFU13UdyqFFxgrANLsFsoLstnergvSTe2NPjsfXgtkJluDs4O5ByPoSZYEm0s2X4DpR/YFqN36NqnQbvbq3HLHWQE+7QOSbHtnCMFW0iBzpiEK0YZr0CrUC2Nzf">!eNcRyPtEd QuOtE!(Token ?)</p>
 
 ~ C.G. Jung
 {: class="quote"}
