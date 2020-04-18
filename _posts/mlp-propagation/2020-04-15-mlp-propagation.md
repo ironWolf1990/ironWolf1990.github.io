@@ -152,6 +152,6 @@ W^{(l)} &= W^{(l)} - \alpha \left[ \left(\frac{1}{m} \Delta W^{(l)} \right) + \l
 ---
 
 Reference:
-<br/><ins>http://deeplearning.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/</ins>
-<br/><ins>http://www.iro.umontreal.ca/~bengioy/ift6266/H12/html/mlp_en.html</ins>
+1. <ins>http://deeplearning.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/</ins>
+2. <ins>http://www.iro.umontreal.ca/~bengioy/ift6266/H12/html/mlp_en.html</ins>
 {: style="font-size: 100%; text-align: left; color: blue;"}

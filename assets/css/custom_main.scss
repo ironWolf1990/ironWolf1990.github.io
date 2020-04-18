@@ -6,37 +6,34 @@ Jekyll Assets: start scss files with two lines of triple dashes
 
 // global reset
 // dark mode
-$color-primary: rgb(52, 165, 7);
-$color-warning: rgb(194, 5, 5);
-$color-bg: rgb(0, 0, 0);
-$color-postbg: rgb(0, 0, 0);
-
-// light mode
-// $color-primary: rgb(0, 0, 0,);
+// $color-primary: rgb(52, 165, 7);
 // $color-warning: rgb(194, 5, 5);
 // $color-bg: rgb(0, 0, 0);
-// $color-postbg: rgb(211,211,211);
+// $color-postbg: rgb(0, 0, 0);
 
-$color-background: rgb(50, 50, 50);
+// light mode
+$color-primary: rgb(0, 0, 0,);
+$color-warning: rgb(194, 5, 5);
+$color-bg: rgb(0, 0, 0);
+$color-postbg: rgb(255, 255, 255);
+
 $image-background: none;
 @font-face {
   font-family: "Fira Code Online";
   src: url("../fonts/FiraCode-Regular.woff");
-  // font-family: "Arial";
-  // src: url("../fonts/Arial.woff");
 }
-$font-family: 
-"Fira Code", 
-"Source Code Pro", 
-"Fira Code Online", 
-"Source-Han-Sans-Medium", 
+$font-family:
+"Fira Code",
+"Source Code Pro",
+"Fira Code Online",
+"Source-Han-Sans-Medium",
 "PingFang SC",
-"Hiragino Sans GB", 
-"Heiti SC", 
-"Microsoft YaHei", 
+"Hiragino Sans GB",
+"Heiti SC",
+"Microsoft YaHei",
 "WenQuanYi Micro Hei",
-Helvetica, 
-Tahoma, 
+Helvetica,
+Tahoma,
 Arial,
 sans-serif;
 $font-size-h1: 23px;
@@ -58,7 +55,7 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
   padding: 0;
   position: fixed;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.2;
   background-color: $color-bg;
   background-image: $image-background;
   font-size: $font-size-primary;
@@ -92,14 +89,13 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
         text-align: left;
         display: block;
         list-style: none;
-        // fix so the the article doesnt overflow into the nav bar
-        // tatal page size is fixed, do not change padding
-        padding: 3.2px 12px;
+        padding: 6px 12px;
+        // padding: 6px 12px 0 0 ;
         word-wrap: none;
         overflow: hidden;
         white-space: nowrap;
         ul {
-          padding: 0;
+          padding: 0;// 0 0 10px;
           margin: 0;
           font-size: $font-smaller;
           .li_left {
@@ -151,24 +147,19 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
       overflow-x: hidden;
       border: 1px solid $color-primary;
       border-top: none;
-      padding: 0px 3px 0px -1px;
       .post_info {
         border-bottom: 1px solid $color-primary;
         text-align: right;
-        padding: 0px 5px 10px 5px;
+        // padding: 0 50px;
+        padding: 0 0 .8% 0;
         font-size: $font-smaller;
       }
       // abstract
       .abstract {
-        padding: 10px 10px;
+        padding: 20px 20px;
         p {
-          font-size: 90%;
           padding: 0 20px;
-          // border-bottom: 1px solid rgba($color-primary, 0.3);
-          color: rgb(52, 165, 7);
-          border: 1px solid rgba($color-primary, 0.3);
-          box-sizing: border-box;
-          background-color: rgb(50, 50, 50);
+          border-bottom: 0.6px solid rgba($color-primary, 0.3);
         }
       }
       article {
@@ -221,38 +212,40 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
           border-left: 2px solid $color-primary;
         }
         .encrypted {
-          text-align:center;
-          font-size:.9em;
-          color: rgba($color-warning, 1);
-          // word-break: break-all;
-        }
-        .quote {
-          text-align:center;
-          font-size:.9em;
-          color: rgba($color-warning, 1);
+          color: rgba($color-warning, 0.9);
+          word-break: break-all;
         }
       }
     }
     // scroll bar
     .div_article::-webkit-scrollbar {
-      width: 7px;
-      color: gray;
+      width: 2px;
     }
     .div_article::-webkit-scrollbar-thumb {
       background-color: $color-primary;
-      color: gray;
     }
     .footer {
+      // height: auto;
+      // padding: 3% 0 1% 0;
+      // margin: 10px 0 10px 0;
+      // position: relative;
+      // text-align: center;
+      // added below
       height: auto;
-      padding: 3% 0 .3% 0;
+      padding: 5% 0 .3% 0;
       margin: 10px 0 1px 0;
       position: relative;
       text-align: center;
+      //
       .nav_bar {
-        border-top: 1px solid $color-primary;
         bottom: 0;
         margin: 0;
-        padding: 0 10px 0 10px;
+        // padding: 0 10px 0 10px;
+        // added below
+        padding: 0 0 0 0;
+        border-top: 1px solid $color-primary;
+        // display: block;
+        //
         ul {
           margin: 0;
           padding: 0;
@@ -288,7 +281,7 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
     bottom: auto;
     top: 32.3px;
     right: -0.5px;
-    border: 0.7px solid rgba($color-primary, 0.6);
+    border: 0.7px solid rgba($color-primary, 1);
     // toc font settings
     ul {
       padding: 0 4px 0 20px;
@@ -323,10 +316,8 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
 }
 // global basic settings
 body {
-  counter-reset: h1;
   // texts
   h1 {
-    counter-reset: h2;
     font-size: $font-size-h1;
     text-transform: uppercase;
     text-align: center !important;
@@ -334,55 +325,27 @@ body {
     margin: 32px 0px 22px 0px;
   }
   h2 {
-    counter-reset: h3;
     font-size: $font-size-h2;
     font-weight: lighter;
     text-transform: capitalize;
     border-bottom: 0.6px solid rgba($color-primary, 0.3);
   }
   h3 {
-    counter-reset: h4;
     font-size: $font-size-h3;
     text-transform: capitalize;
     font-weight: lighter;
   }
   h4 {
-    counter-reset: h5;
     font-size: $font-size-h4;
     font-weight: lighter;
   }
   h5 {
-    counter-reset: h6;
     font-size: $font-size-h5;
     font-weight: lighter;
   }
   h6 {
-    counter-reset: h7;
     font-size: $font-size-h6;
     font-weight: lighter;
-  }
-  h1:before {
-    counter-increment: h1;
-    // content: counter(h1) ". "
-  }
-  
-  h2:before {
-    counter-increment: h2;
-    content: counter(h2) ". "
-  }
-  
-  h3:before {
-    counter-increment: h3;
-    content: counter(h2) "." counter(h3) ". "
-  }
-  
-  h4:before {
-    counter-increment: h4;
-    content: counter(h2) "." counter(h3) "." counter(h4) ". "
-  }
-  h5:before {
-    counter-increment: h5;
-    content: counter(h2) "." counter(h3) "." counter(h4) ". " counter(h5) ". "
   }
   p {
     margin: 10px;
@@ -407,13 +370,13 @@ body {
     margin: 0;
     padding: 0;
     border: 0.5px solid rgba($color-primary, 0.9);
-    background-color: rgba($color-postbg, 0.7);
+    background-color: rgba($color-postbg, 1);
     color: $color-warning;
     font-size: 15px;
   }
   button {
     border: 0.8px solid rgba($color-primary, 0.9);
-    background-color: rgba($color-postbg, 0.7);
+    background-color: rgba($color-postbg, 1);
     color: $color-primary;
   }
   // links
@@ -493,7 +456,7 @@ body {
     left: 0;
     margin: 0;
     border: 1.8px solid $color-primary;
-    background-color: rgba($color-postbg, 0.7);
+    background-color: rgba($color-postbg, 1);
     .header {
       border: none;
       #mxmz_btn {
@@ -516,9 +479,38 @@ body {
     }
   }
 }
-img[src$="center"] {
-  display:block;
-  margin: 0 auto;
-  width: 400px;
-  padding: 10px 0px;
+body {
+  counter-reset: h1
+}
+
+h1 {
+  counter-reset: h2
+}
+
+h2 {
+  counter-reset: h3
+}
+
+h3 {
+  counter-reset: h4
+}
+
+h1:before {
+  counter-increment: h1;
+  content: counter(h1) ". "
+}
+
+h2:before {
+  counter-increment: h2;
+  content: counter(h1) "." counter(h2) ". "
+}
+
+h3:before {
+  counter-increment: h3;
+  content: counter(h1) "." counter(h2) "." counter(h3) ". "
+}
+
+h4:before {
+  counter-increment: h4;
+  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". "
 }
